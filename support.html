@@ -5,151 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Park Stamps - Support</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
+            line-height: 1.6; color: #333; background-color: #f9f9f9;
         }
-
-        .header {
-            background-color: #2c5f2d;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .header h1 {
-            font-size: 28px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-        }
-
-        h2 {
-            color: #2c5f2d;
-            font-size: 24px;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #2c5f2d;
-            padding-bottom: 10px;
-        }
-
-        h2:first-child {
-            margin-top: 0;
-        }
-
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .highlight {
-            background-color: #f0f8f0;
-            padding: 15px;
-            border-left: 4px solid #2c5f2d;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-
-        .contact-box {
-            background-color: #f0f8f0;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border: 1px solid #2c5f2d;
-        }
-
-        .contact-box h3 {
-            color: #2c5f2d;
-            margin-bottom: 10px;
-        }
-
-        .contact-box p {
-            margin-bottom: 10px;
-            text-align: left;
-        }
-
-        .contact-box a {
-            color: #2c5f2d;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .contact-box a:hover {
-            text-decoration: underline;
-        }
-
-        .faq-section {
-            margin: 20px 0;
-        }
-
-        .faq-item {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 6px;
-            margin-bottom: 15px;
-            border-left: 4px solid #2c5f2d;
-        }
-
-        .faq-item strong {
-            color: #2c5f2d;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .faq-item p {
-            margin: 0;
-            text-align: left;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            color: #666;
-            font-size: 14px;
-        }
-
+        .header { background-color: #2c5f2d; color: white; padding: 20px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .header h1 { font-size: 28px; font-weight: 600; letter-spacing: 0.5px; }
+        .container { max-width: 800px; margin: 40px auto; background-color: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); padding: 40px; }
+        h2 { color: #2c5f2d; font-size: 24px; margin-top: 30px; margin-bottom: 15px; border-bottom: 2px solid #2c5f2d; padding-bottom: 10px; }
+        h2:first-child { margin-top: 0; }
+        p { margin-bottom: 15px; text-align: justify; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 10px; }
+        .highlight { background-color: #f0f8f0; padding: 15px; border-left: 4px solid #2c5f2d; margin: 20px 0; border-radius: 4px; }
+        .contact-box { background-color: #f0f8f0; padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #2c5f2d; }
+        .contact-box h3 { color: #2c5f2d; margin-bottom: 10px; }
+        .contact-box p { margin-bottom: 10px; text-align: left; }
+        .contact-box a { color: #2c5f2d; text-decoration: none; font-weight: 600; }
+        .contact-box a:hover { text-decoration: underline; }
+        .faq-item { background-color: #f9f9f9; padding: 15px; border-radius: 6px; margin-bottom: 15px; border-left: 4px solid #2c5f2d; }
+        .faq-item strong { color: #2c5f2d; display: block; margin-bottom: 8px; }
+        .faq-item p { margin: 0; text-align: left; }
+        .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #666; font-size: 14px; }
         @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-                margin: 20px auto;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
-
-            .header h1 {
-                font-size: 22px;
-            }
+            .container { padding: 20px; margin: 20px auto; }
+            h2 { font-size: 20px; }
+            .header h1 { font-size: 22px; }
         }
     </style>
 </head>
@@ -162,81 +44,50 @@
         <h2>Support</h2>
 
         <p>
-            We're here to help! Whether you have questions about National Park Stamps, encounter technical issues, or need assistance with features, please don't hesitate to reach out.
+            We are committed to providing a helpful and responsive support experience. If you have a question, need help with the app, or want to share feedback, we want to hear from you.
         </p>
 
-        <h2>Get Help</h2>
+        <h2>Contact Us</h2>
 
         <div class="contact-box">
             <h3>Email Support</h3>
-            <p>
-                Have a question or issue? Contact us at:
-            </p>
-            <p>
-                <strong>Email:</strong> <a href="mailto:apbeers@icloud.com">apbeers@icloud.com</a>
-            </p>
-            <p>
-                We'll respond to your inquiry as soon as possible, typically within 24-48 hours.
-            </p>
+            <p>For app questions, feedback, accessibility issues, or technical support:</p>
+            <p><strong>Email:</strong> <a href="mailto:apbeers@icloud.com">apbeers@icloud.com</a></p>
+            <p>We aim to respond as quickly as possible, generally within 24 to 48 hours.</p>
         </div>
 
-        <div class="contact-box">
-            <h3>App Store Support</h3>
-            <p>
-                You can also reach us directly through the App Store by selecting "Report a Problem" on the National Park Stamps app page.
-            </p>
+        <h2>Common Questions</h2>
+
+        <div class="faq-item">
+            <strong>How does the app work?</strong>
+            <p>National Park Stamps helps identify park information from photo metadata already stored on your device. All relevant processing happens locally on the device.</p>
         </div>
 
-        <h2>Frequently Asked Questions</h2>
-
-        <div class="faq-section">
-            <div class="faq-item">
-                <strong>How do I use National Park Stamps?</strong>
-                <p>National Park Stamps analyzes photos from your device to extract metadata and identify national park information. Open the app, select photos from your library, and the app will process them on your device to identify parks and provide information.</p>
-            </div>
-
-            <div class="faq-item">
-                <strong>Is my data secure?</strong>
-                <p>Yes. All processing happens entirely on your device. We do not collect, store, or transmit any of your personal data, photos, or location information. See our Privacy Policy for more details.</p>
-            </div>
-
-            <div class="faq-item">
-                <strong>What accessibility features are supported?</strong>
-                <p>National Park Stamps supports VoiceOver, Voice Control, Larger Text, Dark Interface, Reduced Motion, Captions, and many other Apple accessibility features. Visit our Accessibility page for complete information.</p>
-            </div>
-
-            <div class="faq-item">
-                <strong>Why did the app ask for photo library access?</strong>
-                <p>The app needs access to your photo library to read metadata from your photos. This permission is required to identify national park information from your images. No data is collected or shared.</p>
-            </div>
-
-            <div class="faq-item">
-                <strong>Can I use the app offline?</strong>
-                <p>Yes! All processing happens on your device, so you can use National Park Stamps without an internet connection.</p>
-            </div>
-
-            <div class="faq-item">
-                <strong>How do I report a bug or suggest a feature?</strong>
-                <p>We'd love to hear your feedback! Email us at <a href="mailto:apbeers@icloud.com">apbeers@icloud.com</a> with details about bugs or feature suggestions.</p>
-            </div>
-
-            <div class="faq-item">
-                <strong>What should I do if I encounter accessibility issues?</strong>
-                <p>If you experience any accessibility problems, please contact us at <a href="mailto:apbeers@icloud.com">apbeers@icloud.com</a>. We're committed to making our app accessible to everyone and appreciate your feedback.</p>
-            </div>
+        <div class="faq-item">
+            <strong>Is my data safe?</strong>
+            <p>Yes. The app does not collect, store, or transmit personal data for analytics or marketing purposes. Please review the Privacy Policy for more detail.</p>
         </div>
 
-        <h2>Feedback and Improvements</h2>
+        <div class="faq-item">
+            <strong>Does the app support accessibility features?</strong>
+            <p>Yes. The app is designed to work with major iOS accessibility features such as VoiceOver, Voice Control, larger text, dark mode, and reduced motion support.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Why does the app ask for Photos access?</strong>
+            <p>Photos access allows the app to read metadata from images already stored on your device so it can identify park-related information relevant to those photos.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>How do I report a bug or accessibility issue?</strong>
+            <p>Please email us at <a href="mailto:apbeers@icloud.com">apbeers@icloud.com</a> with a description of the problem and, if possible, the iOS version and device model.</p>
+        </div>
+
+        <h2>Feedback</h2>
 
         <div class="highlight">
-            <strong>Your input matters.</strong> We're continually working to improve National Park Stamps. If you have suggestions, encounter issues, or want to share your experience, please reach out. Your feedback helps us create a better app for everyone.
+            <strong>Your input helps.</strong> We appreciate feedback about usability, accessibility, and product improvements. If you have ideas or encounter an issue, please reach out and let us know.
         </div>
-
-        <h2>Response Times</h2>
-
-        <p>
-            We aim to respond to all support inquiries within 24-48 hours during normal business hours. For urgent issues, please include "URGENT" in your subject line.
-        </p>
 
         <div class="footer">
             <p>Last Updated: October 2, 2026</p>
