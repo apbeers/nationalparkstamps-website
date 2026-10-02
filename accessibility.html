@@ -14,6 +14,20 @@
             background-color: #2c5f2d; color: white; padding: 20px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .header h1 { font-size: 28px; font-weight: 600; letter-spacing: 0.5px; }
+        .nav {
+            background-color: #1e4620; padding: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav ul {
+            list-style: none; display: flex; flex-wrap: wrap; justify-content: center; max-width: 900px; margin: 0 auto; padding: 0;
+        }
+        .nav li {
+            margin: 0;
+        }
+        .nav a {
+            display: block; padding: 15px 20px; color: white; text-decoration: none; font-size: 14px; font-weight: 500; transition: background-color 0.3s;
+        }
+        .nav a:hover { background-color: #2c5f2d; }
+        .nav a.active { background-color: #2c5f2d; border-bottom: 3px solid #7cb342; }
         .container {
             max-width: 800px; margin: 40px auto; background-color: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); padding: 40px;
         }
@@ -33,12 +47,24 @@
             h2 { font-size: 20px; }
             .header h1 { font-size: 22px; }
             .features-grid { grid-template-columns: 1fr; }
+            .nav ul { flex-direction: column; }
+            .nav a { text-align: center; }
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>National Park Stamps</h1>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="marketing.html">About</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="accessibility.html" class="active">Accessibility</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="copyright.html">Legal</a></li>
+        </ul>
     </div>
 
     <div class="container">
